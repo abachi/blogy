@@ -1,0 +1,52 @@
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $grey-light;
+}
+
+.login-page__header {
+  font-size: $text-3xl;
+  font-weight: $font-semibold;
+  margin: 0;
+  margin-bottom: $m-4;
+  text-align: center;
+}
+
+.login-page__tag {
+  font-size: $text-sm;
+  color: $grey-dark;
+  margin-bottom: $m-3;
+}
+
+.login-page__content {
+  background: white;
+  padding: $p-6;
+  border-radius: $rounded-lg;
+}
+
+.login-page__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-button {
+  margin: $m-2;
+  padding: $p-2 $p-4;
+  background: white;
+  border: none;
+  border-radius: $rounded;
+  box-shadow: $shadow;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.75;
+  }
+}
+.login-button--google {
+}
+.login-button--github {
+  background: $black;
+  color: white;
+}

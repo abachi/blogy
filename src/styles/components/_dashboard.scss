@@ -1,0 +1,19 @@
+.dashboard-page {
+  padding: $p-6 0;
+}
+.dashboard-page__header {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $md) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.add-post__action {
+  margin-top: $m-6;
+  @media (min-width: $md) {
+    margin-top: 0;
+  }
+}

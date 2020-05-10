@@ -1,0 +1,12 @@
+.post-form {
+  display: flex;
+  flex-direction: column;
+}
+.error {
+  border-radius: $rounded;
+  padding: $p-6;
+  background: $bg-red-300;
+}
+.error__message {
+  color: $text-red-700;
+}

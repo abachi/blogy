@@ -1,0 +1,11 @@
+.readable {
+  margin: $m-6 0;
+}
+
+.readable__link {
+  color: $text-blue-500;
+  text-decoration: underline;
+  span {
+    font-weight: $font-semibold;
+  }
+}

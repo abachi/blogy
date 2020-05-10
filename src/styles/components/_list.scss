@@ -1,0 +1,46 @@
+.posts-list {
+  margin: $m-6 0;
+  padding: $p-2 $p-4;
+  background: white;
+  border-radius: $rounded;
+  box-shadow: $shadow;
+}
+
+.post {
+  margin: $m-6 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post__edit-link {
+  color: $black;
+  display: inline-block;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.post__title {
+  font-size: $text-lg;
+  word-break: break-all;
+  font-weight: $font-semibold;
+}
+
+.post__read-it {
+  color: $text-blue-500;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: $text-sm;
+  font-weight: $font-semibold;
+}
+
+.empty-list {
+  padding: $p-8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+}
+.empty-list__message {
+  color: $text-grey-700;
+}

@@ -1,0 +1,16 @@
+.input {
+  padding: $p-2 $p-3;
+  border-radius: $rounded;
+  box-shadow: $shadow;
+  border: 1px solid $grey-light;
+  color: $text-grey-700;
+  width: 75%;
+}
+.input-group {
+  margin: $m-3 $m-1;
+}
+
+.textarea {
+  @extend .input;
+  min-height: 12rem;
+}

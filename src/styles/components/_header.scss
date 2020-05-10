@@ -1,0 +1,14 @@
+.header {
+  padding: $p-4 $p-2;
+  background: $bg-blue-900;
+  color: white;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: $m-6 0;
+}
+.header-home-link {
+  color: white;
+}
