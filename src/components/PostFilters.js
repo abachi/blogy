@@ -6,8 +6,8 @@ export const PostFilters = ({ setTextFilter }) => {
   const [searchText, setTextSearch] = useState('');
   const onTextChange = (e) => {
     const text = e.target.value;
-    setTextSearch(text);
     setTextFilter(text);
+    setTextSearch(text);
   };
   return (
     <div className="filters-list">

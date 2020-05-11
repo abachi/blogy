@@ -1,5 +1,5 @@
 .page {
-  padding: $p-4 $p-2;
+  padding: $p-4;
 }
 .page-title {
   margin: $m-6 0;
@@ -8,4 +8,5 @@
   margin: $m-6 0;
   font-size: $text-lg;
   line-height: 1.5;
+  white-space: pre-line;
 }

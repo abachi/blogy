@@ -7,10 +7,16 @@
 }
 
 .post {
-  margin: $m-6 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+
+  margin-bottom: $m-6;
+  @media (min-width: $md) {
+  flex-direction: row ;
+    margin: $m-6 0;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .post__edit-link {
   color: $black;
@@ -32,6 +38,10 @@
   text-transform: uppercase;
   font-size: $text-sm;
   font-weight: $font-semibold;
+  margin-top: $m-3;
+  @media (min-width: $md) {
+    margin-top: 0;
+  }
 }
 
 .empty-list {

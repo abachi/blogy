@@ -22,23 +22,25 @@ export const EditPost = ({ history, match, removePost, editPost, post }) => {
     setIsRemoveModalOpen(false);
   };
   return post ? (
-    <div className="container">
-      <div className="readable">
-        <Link className="readable__link" to={`/read/${post.id}`}>
-          <span>Public link:</span> "{post.title}" via this link.
-        </Link>
+    <div className="page">
+      <div className="container">
+        <div className="readable">
+          <Link className="readable__link" to={`/read/${post.id}`}>
+            <span>Public link:</span> "{post.title}" via this link.
+          </Link>
+        </div>
+        <PostForm onSavePost={onSavePost} post={post} />
+        <div>
+          <button className="button button--danger" onClick={openRemoveModal}>
+            Remove Post
+          </button>
+        </div>
+        <ConfirmationModal
+          isOpen={isRemoveModalOpen}
+          onRequestClose={closeRemoveModal}
+          onRemove={onRemovePost}
+        />
       </div>
-      <PostForm onSavePost={onSavePost} post={post} />
-      <div>
-        <button className="button button--danger" onClick={openRemoveModal}>
-          Remove Post
-        </button>
-      </div>
-      <ConfirmationModal
-        isOpen={isRemoveModalOpen}
-        onRequestClose={closeRemoveModal}
-        onRemove={onRemovePost}
-      />
     </div>
   ) : (
     <p>There's no post such this ID: {match.params.id}</p>
